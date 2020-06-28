@@ -41,7 +41,7 @@ content.classList.add("animate__animated");
 
 setTimeout(function(){
     //Es para movernos entre carpetas
-    location.href = "/";
+    location.href = "/Boleto";
 }, 600);
 
 // location.href = "../index.html" 
