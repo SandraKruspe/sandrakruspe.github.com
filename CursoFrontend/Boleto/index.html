@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!--Es para la vista con dispositivos diferentes-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>MODA</title>
+    <!--Hoja para normalizar la pagina para que se adapte a cada dispositivo-->
+    <link href="./assets/css/normalize.css" rel="stylesheet">
+    <!--Aqui esta la hoja de estilos-->
+    <link href="./assets/css/main.css" rel="stylesheet">
+    <!--Lo agregue para colocar las estrellas-->
+    <script src="https://kit.fontawesome.com/57ed8d8dd7.js" crossorigin="anonymous"></script>
+    <!--Para el tipo de letra-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <!--Enlace para las animaciones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+<!--Se agrega el icono a la imagen-->
+    <link rel="icon" type="image/ico" href="./assets/img/favicon.ico">
+
+</head>
+<body>
+    <!--El container es como todo el fondo-->
+    <div class="container animate__animated animate__bounceInLeft" >
+    <!--El content con lo que pusimos encima-->
+        <div class="content">
+        <header>
+            <h1 class="titulo">Prendas mejor calificadas</h1>
+        </header>
+
+<!--Aqui estamos ingresando una tabla-->
+        <table class="table">
+            <!--Esta etiqueta hace referencia a los encabezados-->
+            <thead>
+                <!--Esta otra etiqueta la usamos para los nombres de los encabezados-->
+                <th>Posición</th>
+                <th>Nombre de la prenda</th>
+                <th>Tienda</th>
+                <th>Puntos</th>
+                <th>Acciones</th>
+            </thead>
+            <!--Aqui va el cuerpo de la tabla-->
+            <tbody>
+                <!--Aqui indicamos las filas-->
+                <tr>
+                    <!--Estas son las celdas, que son la misma cantidad de columnas-->
+                    <td>1</td>
+                    <td>Falda</td>
+                    <td>F21</td>
+                    <td>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </td>
+                    <td>
+                        <a href="./tiendas/F21.html">VER MÁS</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <!--Estas son las celdas, que son la misma cantidad de columnas-->
+                    <td>2</td>
+                    <td>Blusa print</td>
+                    <td>H&M</td>
+                    <td>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </td>
+                    <td>
+                        <a href="./tiendas/h&m.html">VER MÁS</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <!--Estas son las celdas, que son la misma cantidad de columnas-->
+                    <td>3</td>
+                    <td>Pantalón</td>
+                    <td>P&B</td>
+                    <td>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </td>
+                    <td>
+                     <a href="./tiendas/p&b.html">VER MÁS</a>  
+                    </td>
+                </tr>
+                
+                <tr>
+                    <!--Estas son las celdas, que son la misma cantidad de columnas-->
+                    <td>4</td>
+                    <td>Sueter</td>
+                    <td>Lefties</td>
+                    <td>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </td>
+                    <td>
+                        <a href="./tiendas/left.html">VER MÁS</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        </div>
+    </div>
+<!--Javacrip-->
+<script src="./assets/js/main.js"></script>
+</body>
+</html>

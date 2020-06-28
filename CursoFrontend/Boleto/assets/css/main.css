@@ -1,0 +1,219 @@
+/* 
+#FEDBD0 ROSA PRINCIPAL
+#442C2E CAFE
+#FEEAE6 SECUNDARIO 
+*/
+html{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #442C2E;
+}
+
+a{
+    text-decoration: none; /*Sirve para la linea abajo de los links*/
+    text-transform: uppercase; /*Sirve para ponerlos en mayusculas o etc*/
+    color:#FF697F;
+    font-size: 200;
+    line-height: initial;
+}
+
+.table{
+    width: 100%; /*Para que ocupe todo lo ancho disponible*/
+   /* border-spacing: 0;
+   Este quita el espacio por defecto del navegador en las tablas*/
+
+}
+
+.table td, table th{
+    padding: 1em;
+    text-align: center;
+}
+.container{
+    background-color: #FEDBD0;
+
+    height: 100vh; /*Usamos esto para darle dimension al container*/
+
+    /*Los usamos para que el content tenga posicion*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    max-width: 960px;
+    width: 100%;
+    height: 80vh;
+
+    background-color: #FEEAE6;
+
+    box-shadow: 5px 4px 20px 1px rgba(0, 0, 0, 0.30); /*Para colocarle sombras*/
+    border-radius: 15px; /*Para redondear las esquinas*/
+
+    /*Posicion conrespecto al container*/
+    position: relative;
+
+    padding: 1.8em;
+
+    /*Se usa para el desbordamiento del texto el la pagina,
+    podemos tener overflow hacia los lados
+    
+    */
+    overflow-y: scroll;
+}
+
+.acciones{
+
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    
+}
+
+.close{
+    width: 40px;
+    height: 40px;
+    color: azure;
+    border-radius: 50%;
+    background-color:  #CFF7FF;
+    /*Lo usamos para que tome los valores que nosotros ajustamos*/
+    display: inline-block;
+
+    box-shadow: 1px 2px 10px 1px rgba(0, 0, 0, 0.30);
+
+    /*Cambia el cursor por la manita cuando nos colocamos ahi*/
+    cursor: pointer;
+
+    /*Estas tres propiedades las usamos para centrar el contenido*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.marca{
+    /*Estos tres son para colocarle borde al texto*/
+    border-bottom-style: solid; /*Aqui estamos indicando que unicamente al borde de abajo*/
+    border-width: 2px;
+    border-color: #ee9ca7;
+
+    /*Separacion entre el borde y el texto*/
+    padding-bottom: 1em;
+    
+    font-size: 2em;
+
+    text-transform: uppercase;
+
+}
+
+
+.titulo{
+text-align: center;
+}
+
+.posicion{
+   background-color: #ee9ca7;
+   color:black; 
+   padding: .5em;
+
+   border-radius: 20px;
+   
+   margin-right: .5em;
+
+   box-shadow: 1px 2px 10px 1px rgba(0, 0, 0, 0.30);
+
+}
+
+
+
+
+
+
+.fa-star{
+    
+    color: #9CFFE8;
+    
+}
+
+.historia{
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.8em; /*Para el interlineado*/
+    text-align: justify; /*Justificacion*/
+
+}
+
+th{
+    border-spacing: 0;
+    background-color: #FFAC9C;
+}
+
+
+.table tr:nth-child(even){
+    /*Para que se coloque
+    color en las filas impares en mi tabla, esa propiedad se pasa con even*/
+    background-color: lightpink;
+    
+    }
+
+    /*Aqui indicamos que cuando el cursor pase por el link este 
+    cambia de opacidad, podemos modificarle muchas cosas, como el color entre
+    otras características
+    a:hover Cuando pasa
+    a:visited cuando lo visita
+    a:focus cuando tienen el foco
+    */
+    a:hover{
+        opacity: 0.5;
+    }
+
+    .direccion{
+        font-weight: bold;
+        color: #442C2E;
+        font-size: 1em;
+        margin-top: 2em;
+        display: inline-block;
+    }
+
+    .imagenes{
+        float: left; /*Para colocar las imagenes a la izquierda*/
+        margin-right: 1em; /*Separacion entre imagenes y texto*/
+
+        /*Estos dos fueron para darle el mismo tamaño a las imágenes*/
+        width: 320px; 
+        height: 320px;
+    }
+
+    @media(max-width:600px){
+
+        .content{
+            padding: 1em;
+            
+        }
+
+        td{
+            /*Cambia filas por columnas*/
+            display: block;
+            width: 100%;
+        }
+
+        td:nth-of-type(1){
+            /*Hace que el numero del ranking sea mas notorio*/
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        th{
+            /*Oculta los encabezados*/
+            display: none;
+        }
+
+    }
+
+    @media(min-height:550px){
+
+        .content{
+            height: 500px;
+        }
+    }
+
+    /*Con esto evitamos el desbordamiento de las imagenes*/
+    img{
+        max-width: 100%;
+    }
